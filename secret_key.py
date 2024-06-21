@@ -1,1 +1,0 @@
-OpenAI_key = "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"
