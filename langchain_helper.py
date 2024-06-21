@@ -2,11 +2,11 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
-from secret_key import OpenAI_key
 import langchain_community
+import streamlit as st
 import os
 
-os.environ['OPENAI_API_KEY'] = OpenAI_key
+os.environ['OPENAI_API_KEY'] = st.secrets["OpenAI_api"]
 
 llm = OpenAI(model_name="gpt-3.5-turbo-instruct", temperature = 0.6)
 
