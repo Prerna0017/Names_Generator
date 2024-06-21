@@ -5,7 +5,7 @@ from langchain.chains import SequentialChain
 import langchain_community
 import streamlit as st
 
-OPENAI_API_KEY = st.secrets["OpenAI_api"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 llm = OpenAI(model_name="gpt-3.5-turbo-instruct", temperature = 0.6)
 
